@@ -2,10 +2,10 @@
 CHANGES
 =======
 
-3.5.3 (unreleased)
+4.0.0 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Add support for Python 3.4. 3.5, 3.6 and PyPy.
 
 
 3.5.2 (2010-12-28)
