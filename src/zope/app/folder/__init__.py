@@ -12,9 +12,7 @@
 #
 ##############################################################################
 """Folder content component
-
-$Id$
 """
 __docformat__ = 'restructuredtext'
 
-from folder import Folder, rootFolder
+from .folder import Folder, rootFolder
