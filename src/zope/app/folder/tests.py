@@ -17,6 +17,7 @@ import unittest
 
 from zope.testing import cleanup
 
+
 def _make_import_test(mod_name, attrname):
     def test(self):
         mod = importlib.import_module('zope.app.folder.' + mod_name)
@@ -24,13 +25,15 @@ def _make_import_test(mod_name, attrname):
 
     return test
 
+
 class TestBWCImports(unittest.TestCase):
 
     for mod_name, attrname in (('interfaces', 'IFolder'),
                                ('folder', 'Folder'),
                                ('filerepresentation', 'RootDirectoryFactory'),
-    ):
+                               ):
         locals()['test_' + mod_name] = _make_import_test(mod_name, attrname)
+
 
 class TestConfiguration(cleanup.CleanUp,
                         unittest.TestCase):
@@ -48,7 +51,7 @@ class TestConfiguration(cleanup.CleanUp,
           <browser:menu
            id="zmi_views"
            title="Views"
-           description="Menu for displaying alternate representations of an object"
+           description="Menu for displaying alternate reprs of an object"
           />
           <browser:menu
            id="zmi_actions"
@@ -73,7 +76,7 @@ class TestConfiguration(cleanup.CleanUp,
           <browser:menu
            id="zmi_views"
            title="Views"
-           description="Menu for displaying alternate representations of an object"
+           description="Menu for displaying alternate reprs of an object"
           />
           <browser:menu
            id="zmi_actions"
