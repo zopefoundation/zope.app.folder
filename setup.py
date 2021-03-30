@@ -67,10 +67,16 @@ setup(name='zope.app.folder',
           'Topic :: Internet :: WWW/HTTP',
           'Framework :: Zope :: 3'],
       url='http://github.com/zopefoundation/zope.app.folder',
+      project_urls={
+          'Issue Tracker': ('https://github.com/zopefoundation/'
+                            'zope.app.folder/issues'),
+          'Sources': 'https://github.com/zopefoundation/zope.app.folder',
+      },
       license='ZPL 2.1',
       packages=find_packages('src'),
       package_dir={'': 'src'},
       namespace_packages=['zope', 'zope.app'],
+      python_requires='>=2.7,!=3.0.*,!=3.1.*,!=3.2.*,!=3.3.*,!=3.4.*',
       install_requires=[
           'setuptools',
           'zope.container',
