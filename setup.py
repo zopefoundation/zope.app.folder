@@ -23,7 +23,7 @@ def read(*rnames):
         return f.read()
 
 
-version = '4.1.0.dev0'
+version = '5.0.dev0'
 
 tests_require = [
     'zope.app.container',
