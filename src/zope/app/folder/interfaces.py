@@ -16,4 +16,5 @@ BBB This module moved to zope.site
 """
 
 # BBB
-from zope.site.interfaces import IFolder, IRootFolder
+from zope.site.interfaces import IFolder
+from zope.site.interfaces import IRootFolder

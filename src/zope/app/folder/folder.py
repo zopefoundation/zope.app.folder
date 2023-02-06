@@ -16,4 +16,6 @@ BBB This module moved to zope.site.folder
 """
 
 # BBB
-from zope.site.folder import Folder, rootFolder, FolderSublocations
+from zope.site.folder import Folder
+from zope.site.folder import FolderSublocations
+from zope.site.folder import rootFolder

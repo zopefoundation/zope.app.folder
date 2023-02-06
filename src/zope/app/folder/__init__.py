@@ -15,4 +15,5 @@
 """
 __docformat__ = 'restructuredtext'
 
-from .folder import Folder, rootFolder
+from .folder import Folder
+from .folder import rootFolder
