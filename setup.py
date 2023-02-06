@@ -40,7 +40,7 @@ tests_require = [
 setup(name='zope.app.folder',
       version=version,
       author='Zope Foundation and Contributors',
-      author_email='zope-dev@zope.org',
+      author_email='zope-dev@zope.dev',
       description='Folder Content Type for Zope 3',
       long_description=(
           read('README.rst')
