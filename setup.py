@@ -16,7 +16,6 @@
 """
 import os
 
-from setuptools import find_packages
 from setuptools import setup
 
 
@@ -34,7 +33,7 @@ tests_require = [
     'zope.browserresource',
     'zope.configuration',
     'zope.testing',
-    'zope.testrunner',
+    'zope.testrunner >= 6.4',
 ]
 
 setup(name='zope.app.folder',
@@ -74,9 +73,6 @@ setup(name='zope.app.folder',
           'Sources': 'https://github.com/zopefoundation/zope.app.folder',
       },
       license='ZPL-2.1',
-      packages=find_packages('src'),
-      package_dir={'': 'src'},
-      namespace_packages=['zope', 'zope.app'],
       python_requires='>=3.9',
       install_requires=[
           'setuptools',
